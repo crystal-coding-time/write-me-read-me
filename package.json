@@ -1,0 +1,15 @@
+{
+  "name": "write-me-read-me",
+  "version": "1.0.0",
+  "description": "Write Me is a README file generator - spend more time programming and less time markingdown your README!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
