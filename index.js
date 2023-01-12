@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const { default: Choices } = require('inquirer/lib/objects/choices');
 
-// App questions
+// README questions
 const questions = [
     {
         type: 'input',
@@ -15,33 +15,33 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'installation',
-        message: 'installation?'
+        name: 'usage',
+        message: "What is the program's intended use?"
     },
     {
         type: 'input',
-        name: 'usage',
-        message: 'Project usage?'
+        name: 'installation',
+        message: 'How do you install the program?'
     },
     {
         type: 'input',
         name: 'contribution',
-        message: 'contribution?'
+        message: 'How can people contribute to future development of the program?'
     },
     {
         type: 'input',
         name: 'email',
-        message: 'email?'
+        message: 'What is your contact email address?'
     },
     {
         type: 'input',
         name: 'github',
-        message: 'GitHub?'
+        message: 'What is your GitHub username or link?'
     },
     {
         type: 'list',
         name: 'license',
-        message: 'license?'
+        message: 'What license does this program fall under?',
         choices: ['MIT', 'ISC', 'GNUPLv3'],
         filter(val) {
             return val.toLowerCase();
