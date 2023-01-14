@@ -1,4 +1,6 @@
 const inquirer = require('inquirer');
+const markDown = require('./lib/ReadmeGen')
+const fs = require('fs');
 const { default: Choices } = require('inquirer/lib/objects/choices');
 
 // README questions
@@ -25,7 +27,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contribution',
+        name: 'contributing',
         message: 'How can people contribute to future development of the program?'
     },
     {
@@ -54,8 +56,14 @@ const questions = [
 async function runQuery() {
     return inquirer.prompt(questions)
     .then((answers) =>{
-        console.log(answers);
-        return answers;
+        const markDownAnswers = markDown.generateReadme(answers);
+        fs.writeFile('README.md', markDownAnswers, function(err) {
+            if(err) {
+                console.log('Could not save README file')
+            } else {
+                console.log('Look at all the time you saved using this program!')
+            }
+        })
     })
     .catch((error) => {
         console.log(error)
