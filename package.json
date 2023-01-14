@@ -4,7 +4,7 @@
   "description": "Write Me is a README file generator - spend more time programming and less time markingdown your README!",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
