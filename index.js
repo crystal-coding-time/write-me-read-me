@@ -49,7 +49,7 @@ const questions = [
     }
 ];
 
-// Run async query function 
+// Run async query function that pulls questions from our questions array
 
 async function runQuery() {
     return inquirer.prompt(questions)
@@ -57,4 +57,9 @@ async function runQuery() {
         console.log(answers);
         return answers;
     })
+    .catch((error) => {
+        console.log(error)
+    })
 }
+
+runQuery()
