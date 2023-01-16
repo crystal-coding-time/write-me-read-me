@@ -1,7 +1,7 @@
 
-    # Beans
+# Beans
     
-    ## Table of Contents
+## Table of Contents
     - [Project Description](#description)
     - [Usage](#usage)
     - [Installation](#installation)
@@ -9,22 +9,22 @@
     - [Questions](#questions)
     - [License](#license)
 
-    ## Description
-    I love beans
+## Description
+More beand
 
-    ## Usage
-    BEANS
+## Usage
+beand
 
-    ## Installation
-    with beans
+## Installation
+Wehhhhh
 
-    ## Contributing
-    undefined
+## Contributing
+Whaaaaa
 
-    ## Questions
-    beans@beans.bn
-    BeanBoay69
+## Questions
+BEANS!
+lmao more beans
 
-    ## License
-    mit
+## License
+mit
     
